@@ -1,0 +1,132 @@
+[debug] [2025-02-02T18:13:47.446Z] ----------------------------------------------------------------------
+[debug] [2025-02-02T18:13:47.451Z] Command:       /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2025-02-02T18:13:47.451Z] CLI Version:   13.29.3
+[debug] [2025-02-02T18:13:47.451Z] Platform:      darwin
+[debug] [2025-02-02T18:13:47.452Z] Node Version:  v22.5.1
+[debug] [2025-02-02T18:13:47.452Z] Time:          Sun Feb 02 2025 19:13:47 GMT+0100 (Central European Standard Time)
+[debug] [2025-02-02T18:13:47.452Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-02T18:13:47.455Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-02T18:13:47.480Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-02T18:13:47.480Z] > authorizing via signed-in user (info@igradlabs.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/santhosh/Documents/bathiya_house_keeping/main_website_content
+
+[debug] [2025-02-02T18:13:47.819Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-02T18:13:47.820Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-02T18:15:12.449Z] Checked if tokens are valid: false, expires at: 1724424360830
+[debug] [2025-02-02T18:15:12.450Z] Checked if tokens are valid: false, expires at: 1724424360830
+[debug] [2025-02-02T18:15:12.450Z] > refreshing access token with scopes: []
+[debug] [2025-02-02T18:15:12.452Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-02T18:15:12.452Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-02T18:15:12.557Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-02-02T18:15:12.558Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-02-02T18:15:12.558Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-02-02T18:15:12.630Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/opt/homebrew/lib/node_modules/firebase-tools/lib/auth.js:147:12)
+    at refreshTokens (/opt/homebrew/lib/node_modules/firebase-tools/lib/auth.js:539:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAccessToken (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:42:18)
+    at async Client.addAuthHeader (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:169:21)
+    at async Client.request (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:120:34)
+    at async getProjectPage (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:265:17)
+    at async getFirebaseProjectPage (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:282:23)
+    at async selectProjectInteractively (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:122:41)
+    at async doSetup (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:89:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2025-02-02T18:15:34.065Z] ----------------------------------------------------------------------
+[debug] [2025-02-02T18:15:34.073Z] Command:       /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2025-02-02T18:15:34.074Z] CLI Version:   13.29.3
+[debug] [2025-02-02T18:15:34.074Z] Platform:      darwin
+[debug] [2025-02-02T18:15:34.074Z] Node Version:  v22.5.1
+[debug] [2025-02-02T18:15:34.074Z] Time:          Sun Feb 02 2025 19:15:34 GMT+0100 (Central European Standard Time)
+[debug] [2025-02-02T18:15:34.074Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-02T18:15:34.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-02T18:15:34.089Z] > authorizing via signed-in user (info@igradlabs.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/santhosh/Documents/bathiya_house_keeping/main_website_content
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-02-02T18:15:58.399Z] Checked if tokens are valid: false, expires at: 1724424360830
+[debug] [2025-02-02T18:15:58.399Z] Checked if tokens are valid: false, expires at: 1724424360830
+[debug] [2025-02-02T18:15:58.400Z] > refreshing access token with scopes: []
+[debug] [2025-02-02T18:15:58.402Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-02T18:15:58.402Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-02T18:15:58.509Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-02-02T18:15:58.509Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-02-02T18:15:58.557Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/opt/homebrew/lib/node_modules/firebase-tools/lib/auth.js:147:12)
+    at refreshTokens (/opt/homebrew/lib/node_modules/firebase-tools/lib/auth.js:539:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAccessToken (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:42:18)
+    at async Client.addAuthHeader (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:169:21)
+    at async Client.request (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:120:34)
+    at async createCloudProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:207:26)
+    at async createFirebaseProjectAndLog (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:71:9)
+    at async promptAndCreateNewProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:89:27)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-02-02T18:16:11.619Z] ----------------------------------------------------------------------
+[debug] [2025-02-02T18:16:11.621Z] Command:       /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/firebase login --reauth
+[debug] [2025-02-02T18:16:11.621Z] CLI Version:   13.29.3
+[debug] [2025-02-02T18:16:11.621Z] Platform:      darwin
+[debug] [2025-02-02T18:16:11.622Z] Node Version:  v22.5.1
+[debug] [2025-02-02T18:16:11.622Z] Time:          Sun Feb 02 2025 19:16:11 GMT+0100 (Central European Standard Time)
+[debug] [2025-02-02T18:16:11.622Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=50645553&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=info%40igradlabs.com
+[info] 
+[info] Waiting for authentication...
